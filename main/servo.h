@@ -17,7 +17,7 @@ void servo_mover(int graus) {
 }
 
 void configuracao(int pino_servo){
-    gpio_set_direction(pino_servo,GPIO_MODE_INPUT);
+    gpio_set_direction(pino_servo,GPIO_MODE_OUTPUT);
 
         ledc_timer_config_t timer = {
         .speed_mode      = LEDC_LOW_SPEED_MODE,
